@@ -4,7 +4,7 @@ import './App.css';
 
 const api = axios.create({
   baseURL:'https://histo-app.onrender.com/api',
-  timeout: 10000,
+  timeout: 30000,
 });
 
 const App = () => {

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: histo-app
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
