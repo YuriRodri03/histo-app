@@ -1,0 +1,5 @@
+exclude:
+  - node_modules/
+  - server/  # Se você não quer que a pasta "server" seja processada
+  - package.json
+  - package-lock.json
