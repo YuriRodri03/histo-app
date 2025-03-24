@@ -1,18 +1,16 @@
-// 1. Primeiro importe todos os módulos necessários
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-// 2. Agora carregue o .env com o caminho correto
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
-// 3. Inicialize o app Express
+// Inicialize o app Express
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// 4. Middlewares
+// Middlewares
 app.use(cors({
   origin: ['http://localhost:5001', 'https://yurirodri03.github.io'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
