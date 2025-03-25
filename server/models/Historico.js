@@ -14,7 +14,19 @@ const HistoricoSchema = new mongoose.Schema({
   iraGeral: String,
   anoPeriodoInicial: String,
   previsaoConclusao: String,
-  criadoEm: { type: Date, default: Date.now }
+  componentes: [{
+    periodo: String,
+    componente: String,
+    turma: String,
+    situacao: String,
+    codigo: String,
+    frequencia: String,
+    nota: String,
+    ch: String,
+    docente: String
+  }]
+}, { 
+  timestamps: true
 });
 
 module.exports = mongoose.model('Historico', HistoricoSchema);
